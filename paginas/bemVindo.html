@@ -1,5 +1,68 @@
-<!-- Título (jumbotron) -->
-<div class="jumbotron my-1">
-    <h1 class="display-4">Bem vindo!</h1>
-    <p class="lead m-1">Aqui você encontra os melhores álbuns da década por ano.</p>
+<!-- Jumbotron -->
+<div class="jumbotron bg-light mx-3 p-0 h-100 col-md-4" style="top: 4rem; display: inline;">
+    <h1 class="display-4">IndieCritic</h1>
+    <p class="lead m-1">Os melhores álbuns da década organizados por ano.</p>
+    <hr class="my-4">
+
+    <!-- Formulário enquete -->
+    <form class="my-4">
+        <div class="form-group">
+            <p class="lead my-3"><b>Enquete</b></p>
+            <label for="MyFormControlSelect1">Para você, quais os melhores álbuns da decáda?</label>
+            <select multiple class="form-control" id="MyFormControlSelect1" size="5">
+                <option>Radiohead, "A Moon Shaped Pool"</option>
+                <option>The Black Keys, "Brothers"</option>
+                <option>Frank Ocean, "Orange"</option>
+                <option>Arctic Monkeys, "AM"</option>
+                <option>Twenty One Pilots, "Blurryface"</option>
+                <option>Bon Iver, "Bon Iver"</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="MyFormControlInput2">Email</label>
+            <input type="email" class="form-control" id="MyFormControlInput2" placeholder="name@example.com">
+        </div>
+        <button class="btn btn-primary" type="submit">Enviar opnião</button>
+    </form>
+</div>
+
+<!-- Carousel-->
+<div id="carouselExampleCaptions" class="carousel slide border border-secondary m-0 p-0 h-100 col-md-7"
+    data-ride="carousel" style="top: 4rem;">
+    <ol class="carousel-indicators">
+        <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner h-100">
+        <div class="carousel-item active m-0 h-100">
+            <img src="imgs/2019/cagetheelephant-socialcues.jpg" class="d-block img-responsive h-100 w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h5 class="text-warning">Social Cues</h5>
+                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            </div>
+        </div>
+        <div class="carousel-item m-0 h-100">
+            <img src="imgs/2019/brittanyhoward-jaime.jpg" class="d-block img-responsive h-100 w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Second slide label</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </div>
+        <div class="carousel-item m-0 h-100">
+            <img src="imgs/2019/nickcavethebadseeds-ghosteen.jpg" class="d-block img-responsive h-100 w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Third slide label</h5>
+                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+            </div>
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
 </div>

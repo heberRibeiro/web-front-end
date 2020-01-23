@@ -7,11 +7,29 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Web Front-End</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <style>
+        .carousel-inner {
+            /*list-style: none;*/
+            /* aqui tiro a opção de passar SLIDEs < >  */
+            /* position: relative !important;*/
+            /*  z-index: -1;*/
+            /* top: 0;
+            left: 0;*/
+        }
+
+        .carousel-item {
+            /*height: 100vh;
+            width: 100vw;
+            background-size: 100vw;
+            background-position: 50% 0;*/
+        }
+    </style>
 </head>
 
 <body>
-
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <!-- Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <a class="navbar-brand" href-link="#/paginas/bemVindo">IndieCritic</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,17 +47,20 @@
                         Year
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href-link="#">2019</a>
+                        <a class="dropdown-item" href-link="#/paginas/2019.html">2019</a>
                         <a class="dropdown-item" href-link="#">2018</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href-link="#">2017</a>
+                        <a class="dropdown-item" href-link="#">Melhores de cada ano</a>
                     </div>
                 </li>
             </ul>
         </div>
     </nav>
 
-    <main class="nav p-3" href-link-destino></main>
+
+    <main class="nav p-0 m-0" style="height: 84vh;" href-link-destino></main>
+
+
 
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>
