@@ -2,8 +2,8 @@
     function navegarViaAjax(hash) {
         if (!hash) return
 
-        const link = document.querySelector(`[href-link='${hash}']`)
-        if(!link) return
+        //const link = document.querySelector(`[href-link='${hash}']`)
+       // if(!link) return
 
         const destino = document.querySelector('[href-link-destino]')
 
@@ -26,13 +26,13 @@
         if (location.hash) {
             navegarViaAjax(location.hash)
         } else {
-            const primeiroLink = document.querySelector('[href-link]')
-            navegarViaAjax(primeiroLink.hash)
+           // const primeiroLink = document.querySelector('[href-link]')
+            navegarViaAjax('#/paginas/bemVindo')
         }
     }
 
+    navegacaoInicial()
     window.onhashchange = e => navegarViaAjax(location.hash)
     
     configurarLinks()
-    navegacaoInicial()
 })()
