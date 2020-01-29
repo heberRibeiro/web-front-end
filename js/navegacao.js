@@ -1,5 +1,4 @@
 (function () {
-    const navBar = document.querySelector('[hiddenVisible]')
 
     function navegarViaAjax(hash) {
         if (!hash) return
