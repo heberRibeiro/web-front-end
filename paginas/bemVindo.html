@@ -1,68 +1,65 @@
-<!-- Jumbotron -->
-<div class="jumbotron bg-light mx-3 p-0 h-100 col-md-4" style="top: 4rem; display: inline-block;">
-    <h1 class="display-4">IndieCritic</h1>
-    <p class="lead m-1">Os melhores álbuns da década organizados por ano. Com crítica e informações .</p>
-    <hr class="my-4">
-
-    <!-- Formulário enquete -->
-    <form class="my-4">
-        <div class="form-group">
-            <p class="lead my-3"><b>Enquete</b></p>
-            <label for="MyFormControlSelect1">Para você, quais os melhores álbuns da decáda?</label>
-            <select multiple class="form-control" id="MyFormControlSelect1" size="5">
-                <option>Radiohead, "A Moon Shaped Pool"</option>
-                <option>The Black Keys, "Brothers"</option>
-                <option>Frank Ocean, "Orange"</option>
-                <option>Arctic Monkeys, "AM"</option>
-                <option>Twenty One Pilots, "Blurryface"</option>
-                <option>Bon Iver, "Bon Iver"</option>
-            </select>
-        </div>
-        <div class="form-group">
-            <label for="MyFormControlInput2">Email</label>
-            <input type="email" class="form-control" id="MyFormControlInput2" placeholder="name@example.com">
-        </div>
-        <button class="btn btn-primary" type="submit">Enviar opnião</button>
-    </form>
-</div>
-
 <!-- Carousel-->
-<div id="carouselExampleCaptions" class="carousel slide border border-secondary mb-3 p-0 col-md-7" data-ride="carousel"
-    style="top: 4rem; display: inline-block; height: 100vh;">
-    <ol class="carousel-indicators">
-        <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-        <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+<div id="carouselPaginaBemVindo" class="carousel slide border" data-ride="carousel">
+    <ol class="carousel-indicators mb-5">
+        <li data-target="#carouselPaginaBemVindo" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselPaginaBemVindo" data-slide-to="1"></li>
+        <li data-target="#carouselPaginaBemVindo" data-slide-to="2"></li>
     </ol>
-    <div class="carousel-inner h-100">
-        <div class="carousel-item active m-0 h-100">
-            <img src="imgs/2019/cagetheelephant-socialcues.jpg" class="img-responsive h-100 w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-                <h5 class="text-warning">Social Cues</h5>
-                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-            </div>
+    <div class="carousel-inner">
+        <div class="carousel-caption d-none d-md-block" style="margin-bottom: 10%;">
+            <h1>Indie Critic</h1>
+            <h3>Os melhores álbuns lançados</h3>
         </div>
-        <div class="carousel-item m-0 h-100">
-            <img src="imgs/2019/brittanyhoward-jaime.jpg" class="img-responsive h-100 w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-                <h5>Second slide label</h5>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
+        <div class="carousel-item active">
+            <img src="../imgs/paulbanks.jpg" class="img-responsive" alt="...">
         </div>
-        <div class="carousel-item m-0 h-100">
-            <img src="imgs/2019/nickcavethebadseeds-ghosteen.jpg" class="img-responsive h-100 w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-                <h5>Third slide label</h5>
-                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-            </div>
+        <div class="carousel-item">
+            <img src="../imgs/thenational.jpg" class="img-responsive" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="../imgs/boniver.jpg" class="img-responsive" alt="...">
         </div>
     </div>
-    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+    <a class="carousel-control-prev" href="#carouselPaginaBemVindo" role="button" data-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="sr-only">Previous</span>
     </a>
-    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+    <a class="carousel-control-next" href="#carouselPaginaBemVindo" role="button" data-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
     </a>
+</div>
+
+<!-- Colunas de texto-->
+<div class="container marketing">
+    <div class="row">
+        <div class="col-lg-4 mb-4" style="text-align: center;">
+            <img src="imgs/2019/thenational-iameasytofind.jpg" class="img-thumbnail" alt="Cinque Terre" width="70%">
+            <h2>The National</h2>
+            <p>I Am Easy to Find é o oitavo
+                álbum
+                de estúdio da banda de rock indie americana The National, lançado em 17 de
+                maio
+                de 2019 via 4AD.</p>
+            <p><a class="btn btn-secondary" href="#/paginas/theNational" role="button">Detalhes »</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4 mb-4" style="text-align: center;">
+            <img src="imgs/2019/cagetheelephant-socialcues.jpg" class="img-thumbnail" alt="Cinque Terre" width="70%">
+            <h2>Cage The Elephant</h2>
+            <p>Social Cues é o quinto álbum de studio da banda
+                americana Cage the
+                Elephant.
+                Anunciado em 31 de janeiro de 2019 e lançado em 19 de abril do mesmo ano.</p>
+            <p><a class="btn btn-secondary" href="#" role="button">Detalhes »</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4 mb-4" style="text-align: center;">
+            <img src="imgs/2019/nickcavethebadseeds-ghosteen.jpg" class="img-thumbnail" alt="Cinque Terre" width="70%">
+            <h2>Nick Cave & Bad Seeds</h2>
+            <p>Ghosteen é o décimo sétimo álbum de
+                estúdio da banda de rock australiana Nick Cave e do Bad Seeds. Foi lançado em 4
+                de outubro de 2019 na Ghosteen Ltd e em 8 de novembro de 2019 na Bad Seed Ltd,
+                ambas impressões da banda.</p>
+            <p><a class="btn btn-secondary" href="#" role="button">Detalhes »</a></p>
+        </div><!-- /.col-lg-4 -->
+    </div>
 </div>
